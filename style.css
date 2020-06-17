@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    background-size: auto 100vh;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@import url("/all.css");
+.menu,
+.menu-bar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0px 0 18px rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-indent: -500em;
+    height: 2.5em;
+    width: 3.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #72739f;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+    font-family: FontAwesome;
+    border-radius: 20px;
+}
+
+.menu li a:before {
+    font-family: FontAwesome;
+    text-indent: 0em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+}
+
+.menu li a.Configuracoes:before {
+    content: "\f002";
+}
+
+.menu li a.Email:before {
+    content: "\f187";
+}
+
+.menu li a.Vendas:before {
+    content: "\f040";
+}
+
+.menu li a.Canal:before {
+    content: "\f003";
+}
+
+.menu li a.Suporte:before {
+    content: "\f007";
+}
+
+.menu li a.home:before {
+    content: "\f039";
+}
+
+.menu-bar li a:hover,
+.menu li a:hover,
+.menu li:first-child a {
+    background: #267fdd;
+    color: #fff;
+}
+
+.menu-bar {
+    overflow: hidden;
+    left: 3.5em;
+    z-index: 5;
+    width: 0;
+    height: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu-bar li a {
+    display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #72739f;
+    text-decoration: none;
+    position: relative;
+    font-family: verdana;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+    border-radius: 20px;
+}
+
+.menu-bar li:first-child a {
+    height: 2.5em;
+    background: #267fdd;
+    color: #fff;
+    line-height: 2.5
+}
+
+.para {
+    color: #033f72;
+    padding-left: 100px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.open {
+    width: auto;
+    height: auto;
+}
+
+@media all and (max-width: 450px) {
+    .container {
+        margin-top: 100px;
+    }
+    .menu {
+        height: 2.5em;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .menu li a.menu-button {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .menu li a {
+        width: 3.5em;
+        border-radius: 20px;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu-bar li a {
+        width: 100%;
+    }
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        height: 0;
+        top: 2.5em;
+        border-radius: 20px;
+    }
+    .menu-bar li a {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .open {
+        width: 80px;
+        height: auto;
+    }
+    .para {
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-height: 34em) {
+    .menu li,
+    .menu-bar {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-height: 34em) and (max-width: 500px) {
+    .menu {
+        height: 3.5em;
+    }
+}
+
+
+/* 
+.menu {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 98vw;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.menu a:active,
+.menu a:hover {
+    background-color: teal;
+    color: white;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+,
+color 0.5s;
+
+}
+.menu a:active,
+.menu a:hover {
+    background-color: teal;
+    color: white;
+}
+a {
+    color: teal;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+*/
