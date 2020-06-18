@@ -170,78 +170,84 @@ body {
     }
 }
 
-@media screen and (max-height: 34em) {
+@media all and (max-width: 380px) {
+    .container {
+        margin-top: 100px;
+    }
+    .menu {
+        height: 2.5em;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .menu li a.menu-button {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .menu li a {
+        width: 2.5em;
+        border-radius: 20px;
+    }
+    .menu li {
+        display: inline-block;
+    }
+    .menu-bar li a {
+        width: 100%;
+    }
+    .menu-bar {
+        width: 100%;
+        left: 0;
+        height: 0;
+        top: 2.5em;
+        border-radius: 20px;
+    }
+    .menu-bar li a {
+        width: 5em;
+        border-radius: 20px;
+    }
+    .open {
+        width: 80px;
+        height: auto;
+    }
+    .para {
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-height: 24em) {
     .menu li,
     .menu-bar {
-        font-size: 70%;
+        font-size: 85%;
+        width: auto;
     }
-}
-
-@media screen and (max-height: 34em) and (max-width: 500px) {
     .menu {
-        height: 3.5em;
+        height: auto;
     }
 }
 
-
-/* 
-.menu {
-    background-color: white;
-    box-sizing: border-box;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    width: 98vw;
-    top: 0px;
-    z-index: 1;
+@media screen and (min-width:257px) and (max-width: 300px) {
+    .menu li,
+    .menu-bar {
+        font-size: 85%;
+        width: auto;
+    }
+    .menu {
+        height: auto;
+    }
+    .menu-bar {
+        top: 2.5em;
+    }
 }
 
-.menu ul {
-    display: flex;
-    justify-content: space-around;
+@media screen and (max-width:257px) {
+    .menu li,
+    .menu-bar {
+        font-size: 85%;
+        width: auto;
+    }
+    .menu {
+        height: auto;
+    }
+    .menu-bar {
+        top: 5em;
+    }
 }
-
-.menu li {
-    list-style: none;
-}
-
-.menu a {
-    display: block;
-    padding: 10px 20px;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-.menu a:active,
-.menu a:hover {
-    background-color: teal;
-    color: white;
-}
-
-a {
-    color: teal;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-
-,
-color 0.5s;
-
-}
-.menu a:active,
-.menu a:hover {
-    background-color: teal;
-    color: white;
-}
-a {
-    color: teal;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-*/
